@@ -1,2 +1,4 @@
 .ropeproject/
-template.yml
+template.yaml
+*/*.pyc
+lib/__pycache__
