@@ -1,0 +1,6 @@
+---
+stack_name: testStack
+resources:
+  eip:
+    public1: {}
+    public2: {}
