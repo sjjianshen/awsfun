@@ -1,0 +1,5 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'The basic template to create aws resources with cloudformation'
+Parameters: {}
+Resources: {}
+Outputs: {}
