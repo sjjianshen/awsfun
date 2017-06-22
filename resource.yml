@@ -4,3 +4,29 @@ resources:
   eip:
     public1: {}
     public2: {}
+  sg:
+    web:
+      GroupDescription: 'sg for web server'
+      VpcId: 'vpc-1f730a7a'
+      allow:
+        tcp:
+          http:
+            from: 
+              CidrIp: '172.31.0.0/16'
+          https:
+            from: 
+              CidrIp: '172.31.0.0/16'
+          8080:
+            from: 
+              CidrIp: '172.31.0.0/16'
+        icmp:
+          from: 
+            CidrIp: '172.31.0.0/16'
+    bastion:
+      GroupDescription: 'sg for bastion'
+      VpcId: 'vpc-1f730a7a'
+      allow:
+        tcp:
+          ssh:
+            from: 
+              CidrIp: '172.31.0.0/16'

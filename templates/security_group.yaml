@@ -2,7 +2,6 @@
 
 Type: "AWS::EC2::SecurityGroup"
 Properties: 
-  GroupName: ''
   GroupDescription: ''
   SecurityGroupEgress: []
   SecurityGroupIngress: []
