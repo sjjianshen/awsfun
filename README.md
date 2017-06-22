@@ -17,7 +17,7 @@ To create resources
 - [x] Prepare templates
 - [x] Dump eip template
 - [x] Create resources with template
-- [ ] Dump sg template
+- [x] Dump sg template
 - [ ] Dump ec2 template
 - [ ] Resource dependencies
 - [ ] Validate config file
