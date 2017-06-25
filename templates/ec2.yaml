@@ -1,15 +1,8 @@
 Type: "AWS::EC2::Instance"
 Properties: 
-  SubnetId: String
   InstanceType: ''
   ImageId: ''
   SecurityGroupIds: []
-  SecurityGroups: []
   Tags: []
-  Volumes: []
-  KeyName: ''
-  PrivateIpAddress: String
-  UserData: ''
-  IamInstanceProfile: ''
   Monitoring: true
   SourceDestCheck: true

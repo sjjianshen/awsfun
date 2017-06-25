@@ -2,10 +2,13 @@
 stack_name: testStack
 resources:
   eip:
-    public1: {}
-    public2: {}
+    public1:
+      Domain: vpc
+      InstanceId: '!Ref web'
+    public2:
+      Domain: vpc
   sg:
-    web:
+    webSg:
       GroupDescription: 'sg for web server'
       VpcId: 'vpc-1f730a7a'
       allow:
@@ -22,7 +25,7 @@ resources:
         icmp:
           from: 
             CidrIp: '172.31.0.0/16'
-    bastion:
+    bastionSg:
       GroupDescription: 'sg for bastion'
       VpcId: 'vpc-1f730a7a'
       allow:
@@ -30,3 +33,11 @@ resources:
           ssh:
             from: 
               CidrIp: '172.31.0.0/16'
+  ec2:
+    web:
+      InstanceType: 't2.nano'
+      ImageId: 'ami-bbf2f9dc'
+      SubnetId: 'subnet-f48a38ac'
+      SecurityGroupIds:
+        - '!Ref webSg'
+
