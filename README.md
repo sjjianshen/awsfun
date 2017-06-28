@@ -18,6 +18,6 @@ To create resources
 - [x] Dump eip template
 - [x] Create resources with template
 - [x] Dump sg template
-- [ ] Dump ec2 template
-- [ ] Resource dependencies
+- [x] Dump ec2 template
+- [x] Resource dependencies
 - [ ] Validate config file
