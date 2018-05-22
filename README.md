@@ -20,4 +20,4 @@ To create resources
 - [x] Dump sg template
 - [x] Dump ec2 template
 - [x] Resource dependencies
-- [ ] Validate config file
+- [x] Validate config file
