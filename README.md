@@ -21,3 +21,5 @@ To create resources
 - [x] Dump ec2 template
 - [x] Resource dependencies
 - [x] Validate config file
+
+ceshi 
